@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="main">Student Enrollment Form</div>
+    <div class="container">
+      <div class="form-container">
+
+        <form id="registration-form">
+          <div class="same1">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="same1">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="same1">
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" required />
+          </div>
+          <div class="same1">
+            <label for="image">Image link:</label>
+            <input type="url" id="image" name="image" required />
+          </div>
+        </br>
+          <div class="same1">
+
+
+            <label for="gender">Gender</label>
+
+            <select id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          </br>
+          <div class="same1">
+            <label for="skills"><u>Skills:</u>
+            <input type="checkbox" id="java" name="skills" value="Java" />java
+
+            <input type="checkbox" id="html" name="skills" value="HTML" />Html
+
+            <input type="checkbox" id="css" name="skills" value="CSS" /> Css
+
+        </label>
+      </br>
+          </div>
+          <button type="submit" class="btn">submit</button>
+          <button type="reset" class="btn-clear">Clear</button>
+        </form>
+      </div>
+
+      <div class="flex"></div>
+      <div class="card-container" id="card-container">
+        <h2 class="center">Enrolled Students</h2>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
